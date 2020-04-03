@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d2d087bf-5bf6-47bb-8a47-eb31a1d06800" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="IntelliJConfiguration">
+    <option name="PROPERTY_FILES">
+      <value>
+        <list size="0" />
+      </value>
+    </option>
+    <option name="REMOVE_NBSP" value="true" />
+    <option name="CREATE_NEW_JSP" value="true" />
+    <option name="KEY_RESOLUTION_TYPE" value="Use all words in label" />
+    <option name="PROMPT_FOR_KEY_PREFIX" value="false" />
+    <option name="LABEL_PART_1" value="&lt;bean:message key=&quot;" />
+    <option name="LABEL_PART_2" value="&quot;/&gt;" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YhgORpttVTo0EeV7H8NSUw8Fhx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../pre_prod_java_q4q1_2019_1/web-shop" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="tomcat7:run" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2">
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="clean" />
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d2d087bf-5bf6-47bb-8a47-eb31a1d06800" name="Default Changelist" comment="" />
+      <created>1583400207818</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583400207818</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="234" y="3" key="#Project_Structure" timestamp="1583501335955">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="234" y="3" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1583501335955" />
+    <state x="38" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583501248807">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="38" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1583501248807" />
+    <state x="422" y="100" key="FileChooserDialogImpl" timestamp="1584186380521">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="422" y="100" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1584186380521" />
+    <state width="1224" height="163" key="GridCell.Tab.0.bottom" timestamp="1584098044194">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1224" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1584098044194" />
+    <state width="1224" height="163" key="GridCell.Tab.0.center" timestamp="1584098044194">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1224" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1584098044194" />
+    <state width="1224" height="163" key="GridCell.Tab.0.left" timestamp="1584098044194">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1224" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1584098044194" />
+    <state width="1224" height="163" key="GridCell.Tab.0.right" timestamp="1584098044194">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1224" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1584098044194" />
+    <state x="172" y="0" key="Maven.ArtifactSearchDialog" timestamp="1583501431979">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="172" y="0" key="Maven.ArtifactSearchDialog/0.0.1280.680@0.0.1280.680" timestamp="1583501431979" />
+    <state x="350" y="170" key="com.intellij.ide.util.TipDialog" timestamp="1584186366892">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="350" y="170" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1584186366892" />
+  </component>
+</project>

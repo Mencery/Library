@@ -1,0 +1,56 @@
+login.label.login = Логин
+login.label.password = Пароль
+login.button.submit = Войти
+login.button.newuser =  Новый пользователь?
+login.a.forget = Забыли пароль?
+
+newUser.label.phoneNumber = Номер телефона
+newUser.button.singUp = Зарегистрироваться
+
+forgetPassword.button.getPassword = Получить пароль
+
+status.Admin = администратор
+status.Librarian = библиотекарь
+status.Reader = читатель
+logout = Выйти 
+
+admin.td.Name = Название
+admin.td.Author = Автор
+admin.td.PublishingOffice = Издательство
+admin.td.PublishingYear = Год издательства
+admin.td.Amount = Кол-во
+admin.button.Edit = Ред.
+admin.button.Delete =Удалить
+admin.td.Status = Статус
+admin.button.Block = Заблок.
+admin.button.Unblock = Разблок.
+admin.a.Books = Книги
+admin.a.Users = Пользователи
+admin.a.AddBook = Добавить книгу
+admin.a.AddLibrarian = Добавить библиотекаря
+admin.NoOrders = Нет данных
+
+edit.Apply = Применить 
+
+librarian.button.orders = Заказы
+librarian.th.bookName = Название
+librarian.th.bookAuthor = Автор
+librarian.th.returnDate = Возврат
+librarian.th.dateFormat= гггг-мм-дд
+librarian.th.daysLeft= Дней осталось
+librarian.button.confirm= Подтвердить
+librarian.button.returned = Возвращена
+privateOffice.a.notConfirmedOrders= Неподтвержденные заказы
+confirmation.option.toTheHall= Читательский зал
+confirmation.option.subscription = Подписка
+
+reader.button.catalog= Каталог
+reader.button.search = Поиск
+reader.th.Order = Заказ
+reader.button.addOrder= Добавить заказ
+reader.th.confirmedByLibrarian= Подтверждено библиотекарем
+reader.th.forfeits= Штраф
+reader.td.yes = Да
+reader.td.no = Нет
+reader.td.noForfeits =  без штрафа
+privateOffice.a.myOrders = мои заказы

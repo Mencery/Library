@@ -1,0 +1,63 @@
+<%@ page import="ua.nure.plekhanov.SummaryTask4.Path" %>
+<%@ include file="/WEB-INF/jspf/directive/taglib.jspf" %>
+<%@ page contentType="text/html;charset=UTF-8" %>
+
+<input class="open" id="top-box" type="checkbox" hidden>
+<label class="btn" for="top-box"></label>
+<div class="top-panel">
+
+    <div class="message">
+
+
+        <c:set var="user" value="${sessionScope.currentUser}"/>
+
+
+        <form action="controller" style="border: 0px">
+
+            <input type="hidden" name="command" value="${user.status}"/>
+            <div class="box">
+                <select id="language" name="language" onchange="this.form.submit()">
+                    <option value="en" ${language == 'en' ? 'selected' : ''}>English</option>
+                    <option value="ru" ${language == 'ru' ? 'selected' : ''}>Русский</option>
+
+                </select>
+            </div>
+        </form>
+        <br>
+
+        <c:choose>
+            <c:when test="${user.status == 'admin'}">
+                <fmt:message key="status.Admin"/>
+            </c:when>
+            <c:when test="${user.status == 'librarian'}">
+                <fmt:message key="status.Librarian"/>
+            </c:when>
+            <c:when test="${user.status == 'reader'}">
+                <fmt:message key="status.Reader"/>
+            </c:when>
+
+
+        </c:choose>
+        : ${user.login}
+
+
+        <c:if test="${user.status == 'reader'}">
+            <p>
+                <a href="${Path.COMMAND_READER_ORDERS}">
+                    <fmt:message key="privateOffice.a.myOrders"/>
+                </a>
+            </p>
+        </c:if>
+        <c:if test="${user.status == 'librarian'}">
+            <a href="${Path.COMMAND_NOT_CONFIRMED_ORDERS}">
+                <p><fmt:message key="privateOffice.a.notConfirmedOrders"/></p>
+            </a>
+        </c:if>
+
+        <p align="right">
+            <a href="${Path.COMMAND_LOGOUT}">
+                <fmt:message key="logout"/>
+            </a>
+        </p>
+    </div>
+</div>
