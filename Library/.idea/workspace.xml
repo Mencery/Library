@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d2d087bf-5bf6-47bb-8a47-eb31a1d06800" name="Default Changelist" comment="" />
+    <list default="true" id="d2d087bf-5bf6-47bb-8a47-eb31a1d06800" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/BookRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/OrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/db/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/entity/Order.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IntelliJConfiguration">
     <option name="PROPERTY_FILES">
@@ -28,6 +45,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1YhgORpttVTo0EeV7H8NSUw8Fhx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -35,6 +53,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../pre_prod_java_q4q1_2019_1/web-shop" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -103,10 +122,14 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="38" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1583501248807" />
-    <state x="422" y="100" key="FileChooserDialogImpl" timestamp="1584186380521">
+    <state x="447" y="61" key="#com.intellij.ide.util.MemberChooser" timestamp="1586417859553">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="422" y="100" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1584186380521" />
+    <state x="447" y="61" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1586417859553" />
+    <state x="422" y="100" key="FileChooserDialogImpl" timestamp="1586417269308">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="422" y="100" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1586417269308" />
     <state width="1224" height="163" key="GridCell.Tab.0.bottom" timestamp="1584098044194">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -131,5 +154,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="350" y="170" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1584186366892" />
+    <state x="298" y="151" width="672" height="677" key="run.anything.popup" timestamp="1586417384817">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="298" y="151" width="672" height="677" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1586417384817" />
   </component>
 </project>

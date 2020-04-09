@@ -4,15 +4,13 @@ public class Order {
     private int readerId;
     private int bookId;
     private String bookName;
-
-
-
     private String readerLogin;
     private String bookAuthor;
     private String returnDate;
     private int confirm;
     private  int daysLeft;
     private String forfeits;
+
     public String getForfeits() {
         return forfeits;
     }
