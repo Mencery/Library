@@ -1,6 +1,3 @@
-
-<%@ page import="util.Path" %>
-
 <%@ include file="/WEB-INF/jspf/directive/taglib.jspf" %>
 
 <c:set var="language"
@@ -12,8 +9,8 @@
 <c:set var="title" value="ADMIN" scope="page"/>
 
 <head>
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
-    <link rel="stylesheet" type="text/css" media="screen" href="box.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/box.css"/>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <style type="text/css">
 
@@ -29,9 +26,6 @@
 
             -ms-transform: translate(-5%, -60%);
         }
-
-
-
         table {
             font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
             font-size: 14px;
@@ -288,13 +282,13 @@
 
         <tr>
             <td><a href="#books"><fmt:message key="admin.a.Books"/> </a></td>
-            <td><a href="${Path.COMMAND_ADD_BOOK}">
+            <td><a href="controller?command=addBook">
                 <fmt:message key="admin.a.AddBook"/>
             </a></td>
         </tr>
         <tr>
             <td><a href="#users"><fmt:message key="admin.a.Users"/> </a>
-            <td><a href="${Path.COMMAND_NEW_LIBRARIAN}"><fmt:message key="admin.a.AddLibrarian"/></a></td>
+            <td><a href="/controller?command=librarian"><fmt:message key="admin.a.AddLibrarian"/></a></td>
         </tr>
 
     </table>

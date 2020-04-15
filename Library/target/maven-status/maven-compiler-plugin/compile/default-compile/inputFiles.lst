@@ -15,7 +15,9 @@ C:\Users\plekh\IdeaProjects\Library\Library\src\main\java\web\command\CommandCon
 C:\Users\plekh\IdeaProjects\Library\Library\src\main\java\web\command\NewUserCommand.java
 C:\Users\plekh\IdeaProjects\Library\Library\src\main\java\web\command\admin\NewBookCommand.java
 C:\Users\plekh\IdeaProjects\Library\Library\src\main\java\web\command\Logout.java
+C:\Users\plekh\IdeaProjects\Library\Library\src\main\java\repository\BookRepository.java
 C:\Users\plekh\IdeaProjects\Library\Library\src\main\java\web\command\librarian\Confirm.java
+C:\Users\plekh\IdeaProjects\Library\Library\src\main\java\db\TransactionManager.java
 C:\Users\plekh\IdeaProjects\Library\Library\src\main\java\web\command\ForgetPasswordCommand.java
 C:\Users\plekh\IdeaProjects\Library\Library\src\main\java\web\command\LoginTranslateCommand.java
 C:\Users\plekh\IdeaProjects\Library\Library\src\main\java\web\command\reader\ReaderCommand.java
@@ -24,6 +26,7 @@ C:\Users\plekh\IdeaProjects\Library\Library\src\main\java\web\command\reader\Rea
 C:\Users\plekh\IdeaProjects\Library\Library\src\main\java\web\command\librarian\LibrarianCommand.java
 C:\Users\plekh\IdeaProjects\Library\Library\src\main\java\db\DBManager.java
 C:\Users\plekh\IdeaProjects\Library\Library\src\main\java\web\command\admin\NewLibrarianCommand.java
+C:\Users\plekh\IdeaProjects\Library\Library\src\main\java\repository\OrderRepository.java
 C:\Users\plekh\IdeaProjects\Library\Library\src\main\java\web\command\librarian\ConfirmCommand.java
 C:\Users\plekh\IdeaProjects\Library\Library\src\main\java\web\command\librarian\NotConfirmedOrders.java
 C:\Users\plekh\IdeaProjects\Library\Library\src\main\java\web\command\reader\BookOrder.java
@@ -36,5 +39,4 @@ C:\Users\plekh\IdeaProjects\Library\Library\src\main\java\web\command\Login.java
 C:\Users\plekh\IdeaProjects\Library\Library\src\main\java\web\command\admin\NewBook.java
 C:\Users\plekh\IdeaProjects\Library\Library\src\main\java\db\Status.java
 C:\Users\plekh\IdeaProjects\Library\Library\src\main\java\web\Controller.java
-C:\Users\plekh\IdeaProjects\Library\Library\src\main\java\db\DBUtil.java
 C:\Users\plekh\IdeaProjects\Library\Library\src\main\java\web\command\reader\Catalog.java

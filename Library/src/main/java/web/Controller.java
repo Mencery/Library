@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 
-public class Controller  extends HttpServlet {
+public class Controller extends HttpServlet {
     private static final Logger LOG = Logger.getLogger(Controller.class);
 
     protected void doGet(HttpServletRequest request,
@@ -31,10 +31,6 @@ public class Controller  extends HttpServlet {
 
     private void process(HttpServletRequest request,
                          HttpServletResponse response) throws IOException, ServletException {
-
-
-
-
         String commandName = request.getParameter("command");
         String forward = Path.PAGE_ERROR_PAGE;
 
@@ -47,8 +43,6 @@ public class Controller  extends HttpServlet {
             request.setAttribute("errorMessage", e.getMessage());
         }
 
-
-        // go to forward
         request.getRequestDispatcher(forward).forward(request, response);
     }
 }

@@ -3,7 +3,6 @@ package db;
 import db.entity.Book;
 import db.entity.Order;
 import db.entity.User;
-import org.apache.log4j.Logger;
 
 
 import java.sql.*;
@@ -14,7 +13,6 @@ import java.util.List;
 
 public class DBManager {
 
-    private static final Logger LOG = Logger.getLogger(DBManager.class);
 
     private static DBManager instance;
 
@@ -25,7 +23,7 @@ public class DBManager {
     private static final String SQL_PASSWORD_USER =
             "SELECT password FROM library.users WHERE login = ? and phoneNumber = ?";
     private static final String SQL_GET_USER_BY_LOGIN =
-            "SELECT * from users\n" +
+            "SELECT * FROM users" +
                     " WHERE login = ?";
     private static final String SQL_GET_ALL_USERS =
             "SELECT * from users ";
@@ -45,9 +43,9 @@ public class DBManager {
     private static final String SQL_UNBLOCKED_USER =
             "UPDATE users SET blocked =0  Where login =?";
     private static final String SQL_GET_BOOK_BY_NAME =
-            "SELECT * from books\n" +
+            "SELECT * from books" +
                     " WHERE name = ?";
-    private static final String SQL_GET_BOOK_BY_AUTHOR = "SELECT * from books\n" +
+    private static final String SQL_GET_BOOK_BY_AUTHOR = "SELECT * from books" +
             " WHERE author = ?";
     private static final String SQL_SET_READER_ORDER = "INSERT INTO reader_orders" +
             "(reader_id, book_id,confirm) VALUES(?,?,0)";
@@ -60,7 +58,7 @@ public class DBManager {
             " inner join books  on reader_orders.book_id = books.id " +
             "inner join users  on reader_orders.reader_id = users.id where confirm =0";
     private static final String SQL_GET_CONFIRMED_ORDERS = "SELECT reader_orders.*, name, author,login," +
-            "DATEDIFF( return_date,\n" +
+            "DATEDIFF( return_date," +
             "    ?)daysLeft" +
             " from reader_orders" +
             " inner join books  on reader_orders.book_id = books.id " +
@@ -80,8 +78,10 @@ public class DBManager {
     private static final String LESS_THEN_90 = "<90";
     private static final String LESS_THEN_365 = "<365";
     private static final String MORE_THEN_365 = ">365";
+    private static TransactionManager transactionManager;
 
     private DBManager() {
+        transactionManager = new TransactionManager();
     }
 
 
@@ -92,9 +92,9 @@ public class DBManager {
         return instance;
     }
 
-    private static Connection getConnection() throws SQLException {
+    private static Connection getConnection() {
 
-        Connection con = DBUtil.getDataSource().getConnection();
+        Connection con = transactionManager.getConnection();
 
 
         return con;
@@ -104,15 +104,14 @@ public class DBManager {
         if (con != null) {
             try {
                 con.rollback();
-            } catch (SQLException ex) {
-                LOG.error("Cannot rollback transaction", ex);
+            } catch (SQLException ignore) {
             }
         }
     }
 
     private static User extractUser(ResultSet rs) throws SQLException {
         User user = new User();
-        user.setId(rs.getInt("id")); // <-- Constants.FIELD_USERS_ID
+        user.setId(rs.getInt("id"));
         user.setLogin(rs.getString("login"));
         user.setPassword(rs.getString("password"));
         user.setStatus(rs.getString("status"));
@@ -156,7 +155,6 @@ public class DBManager {
     }
 
     /**
-     *
      * @param rs
      * @param user
      * @param con
@@ -298,19 +296,17 @@ public class DBManager {
         Connection con = null;
         PreparedStatement pstmt;
         ResultSet rs;
-        User user = new User();
+        User user = null;
 
         try {
             con = getConnection();
-
-
-            pstmt = con.prepareStatement(SQL_GET_USER_BY_LOGIN);
+            pstmt = transactionManager.getPreparedStatement(con, SQL_GET_USER_BY_LOGIN);
 
             pstmt.setString(1, login);
 
             rs = pstmt.executeQuery();
-            if (rs.next()) {
 
+            if (rs.next()) {
                 user = extractUser(rs);
             }
 
@@ -337,8 +333,6 @@ public class DBManager {
 
         } catch (SQLException e) {
             rollback(con);
-            LOG.error(SQL_GET_ALL_USERS, e);
-
             e.printStackTrace();
         }
 
@@ -439,7 +433,6 @@ public class DBManager {
 
         } catch (SQLException e) {
             rollback(con);
-            LOG.error(SQL_GET_ALL_USERS, e);
 
             e.printStackTrace();
         }
@@ -601,6 +594,7 @@ public class DBManager {
         }
         return orders;
     }
+
     public List<Order> getPenaltyOrders() throws SQLException {
         List<Order> orders = new ArrayList<Order>();
         PreparedStatement pstmt = null;
@@ -616,7 +610,6 @@ public class DBManager {
             pstmt = con.prepareStatement(SQL_GET_CONFIRMED_ORDERS);
 
             pstmt.setString(1, sdf.format(now));
-
 
 
             rs = pstmt.executeQuery();
@@ -732,7 +725,7 @@ public class DBManager {
 
     }
 
-   public void returnBook(int bookId) throws SQLException {
+    public void returnBook(int bookId) throws SQLException {
         Connection con = null;
         PreparedStatement pstmt;
         try {

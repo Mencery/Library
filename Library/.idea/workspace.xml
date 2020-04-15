@@ -1,13 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d2d087bf-5bf6-47bb-8a47-eb31a1d06800" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/BookRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/OrderRepository.java" afterDir="false" />
+    <list default="true" id="d2d087bf-5bf6-47bb-8a47-eb31a1d06800" name="Default Changelist" comment="add repository">
+      <change afterPath="$PROJECT_DIR$/src/main/java/db/TransactionManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/entity/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/db/DBManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/DBManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/db/DBUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/admin_page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/admin_page.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jspf/private_office.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jspf/private_office.jspf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/log4j-1.2.17.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/mysql-connector-java-8.0.15.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/box.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/box.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/img/image.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/text.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/text.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/text_ru.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/text_ru.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/text_ru.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/text_ru.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db/DBManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db/DBUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db/Status.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db/entity/Book.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db/entity/Order.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/exception/AppException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/util/Authorization.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/util/GetPassword.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/util/NewUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/util/Path.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/command/Command.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/command/CommandContainer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/command/ForgetPasswordCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/command/Login.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/command/LoginTranslateCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/command/Logout.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/command/NewUserCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/command/admin/AdminCommand$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/command/admin/AdminCommand$CompareByBookId.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/command/admin/AdminCommand$CompareByUserId.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/command/admin/AdminCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/command/admin/Blocking.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/command/admin/Delete.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/command/admin/EditBookCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/command/admin/NewBook.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/command/admin/NewBookCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/command/admin/NewLibrarianCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/command/librarian/Confirm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/command/librarian/ConfirmCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/command/librarian/ConfirmedOrders.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/command/librarian/LibrarianCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/command/librarian/NotConfirmedOrders.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/command/librarian/PenaltyOrders.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/command/librarian/ReturnBook.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/command/reader/BookOrder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/command/reader/Catalog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/command/reader/ReaderCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/command/reader/ReaderOrders.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/command/reader/Search.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/command/reader/Sorting$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/command/reader/Sorting$CompareByBookAuthor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/command/reader/Sorting$CompareByBookName.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/command/reader/Sorting$CompareByBookOffice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/command/reader/Sorting$CompareByBookYear.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/command/reader/Sorting.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/filter/CommandAccessFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/conf/logging.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/conf/tomcat-users.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/conf/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2020-03-13" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/library/org/apache/jsp/login_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/library/org/apache/jsp/login_jsp.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +91,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="library" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IntelliJConfiguration">
@@ -54,10 +128,25 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../pre_prod_java_q4q1_2019_1/web-shop" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/avatar" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\plekh\IdeaProjects\Library\Library\src\main\webapp\avatar" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="db" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\plekh\IdeaProjects\Library\Library\src\main\webapp\css" />
+      <recent name="C:\Users\plekh\IdeaProjects\Library\Library\src\main\webapp" />
+      <recent name="C:\Users\plekh\IdeaProjects\Library\Library\src\main" />
+      <recent name="C:\Users\plekh\IdeaProjects\Library\Library\src\main\webapp\WEB-INF" />
+      <recent name="C:\Users\plekh\IdeaProjects\Library\Library\src\main\webapp\WEB-INF\avatar" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Tomcat" type="MavenRunConfiguration" factoryName="Maven">
@@ -111,52 +200,102 @@
       <option name="presentableId" value="Default" />
       <updated>1583400207818</updated>
     </task>
+    <task id="LOCAL-00001" summary="add repository">
+      <created>1586421541702</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586421541702</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.jsp" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add repository" />
+    <option name="LAST_COMMIT_MESSAGE" value="add repository" />
   </component>
   <component name="WindowStateProjectService">
     <state x="234" y="3" key="#Project_Structure" timestamp="1583501335955">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="234" y="3" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1583501335955" />
-    <state x="38" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583501248807">
+    <state x="38" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586968097158">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="38" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1583501248807" />
+    <state x="38" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1586968097158" />
     <state x="447" y="61" key="#com.intellij.ide.util.MemberChooser" timestamp="1586417859553">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="447" y="61" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1586417859553" />
+    <state x="310" y="0" key="CommitChangelistDialog2" timestamp="1586421547269">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="310" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1586421547269" />
     <state x="422" y="100" key="FileChooserDialogImpl" timestamp="1586417269308">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="422" y="100" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1586417269308" />
-    <state width="1224" height="163" key="GridCell.Tab.0.bottom" timestamp="1584098044194">
+    <state width="1224" height="163" key="GridCell.Tab.0.bottom" timestamp="1586977749428">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1224" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1584098044194" />
-    <state width="1224" height="163" key="GridCell.Tab.0.center" timestamp="1584098044194">
+    <state width="1224" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1586977749428" />
+    <state width="1224" height="163" key="GridCell.Tab.0.center" timestamp="1586977749428">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1224" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1584098044194" />
-    <state width="1224" height="163" key="GridCell.Tab.0.left" timestamp="1584098044194">
+    <state width="1224" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1586977749428" />
+    <state width="1224" height="163" key="GridCell.Tab.0.left" timestamp="1586977749428">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1224" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1584098044194" />
-    <state width="1224" height="163" key="GridCell.Tab.0.right" timestamp="1584098044194">
+    <state width="1224" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1586977749428" />
+    <state width="1224" height="163" key="GridCell.Tab.0.right" timestamp="1586977749428">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1224" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1584098044194" />
+    <state width="1224" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1586977749428" />
+    <state width="1224" height="146" key="GridCell.Tab.1.bottom" timestamp="1586974662321">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1224" height="146" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1586974662321" />
+    <state width="1224" height="146" key="GridCell.Tab.1.center" timestamp="1586974662321">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1224" height="146" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1586974662321" />
+    <state width="1224" height="146" key="GridCell.Tab.1.left" timestamp="1586974662321">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1224" height="146" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1586974662321" />
+    <state width="1224" height="146" key="GridCell.Tab.1.right" timestamp="1586974662321">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1224" height="146" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1586974662321" />
     <state x="172" y="0" key="Maven.ArtifactSearchDialog" timestamp="1583501431979">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="172" y="0" key="Maven.ArtifactSearchDialog/0.0.1280.680@0.0.1280.680" timestamp="1583501431979" />
+    <state x="234" y="78" key="Vcs.Push.Dialog.v2" timestamp="1586421848182">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="234" y="78" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1586421848182" />
     <state x="350" y="170" key="com.intellij.ide.util.TipDialog" timestamp="1584186366892">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="350" y="170" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1584186366892" />
-    <state x="298" y="151" width="672" height="677" key="run.anything.popup" timestamp="1586417384817">
+    <state x="298" y="151" width="672" height="677" key="run.anything.popup" timestamp="1586970072975">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="298" y="151" width="672" height="677" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1586417384817" />
+    <state x="298" y="151" width="672" height="677" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1586970072975" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/util/NewUser.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

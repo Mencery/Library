@@ -9,7 +9,7 @@
 <%@ include file="/WEB-INF/jspf/directive/taglib.jspf" %>
 
 <%@ page import="util.Path" %>
-
+<%@ page isELIgnored="false" %>
 
 <html>
 <head>
@@ -133,7 +133,7 @@
 <div>
     <form action="controller" method="post">
         <div class="imgcontainer">
-            <img src="images.png" alt="Avatar" class="avatar">
+            <img src="https://comps.canstockphoto.com/library-icon-vector-male-student-person-eps-vectors_csp67739133.jpg" alt="Avatar" class="avatar">
         </div>
         <input type="hidden" name="command" value="login"/>
         <div class="container">
@@ -170,7 +170,7 @@
                 <fmt:message key="login.button.newuser"/>
             </button>
             <input type="hidden" name="command" value="newUser"/>
-            <a class="forgot" href="${Path.PAGE_FORGET_PASSWORD_PAGE}">
+            <a class="forgot" href="forget_password.jsp">
                 <fmt:message key="login.a.forget"/>
             </a>
         </form>
